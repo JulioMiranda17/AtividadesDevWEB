@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Profissional e Matrícula</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Perfil Profissional</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Sobre mim</h2>
+
+            <p>
+                Meu nome é Júlio. Sou estudante de Análise e Desenvolvimento de Sistemas
+                e estou aprendendo HTML.
+            </p>
+
+            
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+
+            <ul>
+                <li>HTML básico</li>
+                <li>Lógica de programação</li>
+                <li>Inglês avançado</li>
+                <li>Trabalho em equipe</li>
+                <li>Aprendizado Rápido</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formação Acadêmica</h2>
+
+            <table border="1">
+                <caption>Minha formação acadêmica</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Curso</th>
+                        <th scope="col">Instituição</th>
+                        <th scope="col">Situação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Análise e Desenvolvimento de Sistemas</td>
+                        <td>IFPE</td>
+                        <td>Cursando</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ensino Médio</td>
+                        <td>Colégio e Curso Real</td>
+                        <td>Concluído</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formulário de Matrícula</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" autocomplete="nome" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </p>
+
+                    <p>
+                        <label for="nascimento">Data de nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento" required>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+                    </p>
+
+                    <p>
+                        Sexo:
+                        <input type="radio" id="masculino" name="sexo" value="masculino">
+                        <label for="masculino">Masculino</label>
+
+                        <input type="radio" id="feminino" name="sexo" value="feminino">
+                        <label for="feminino">Feminino</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados da matrícula</legend>
+
+                    <p>
+                        <label for="matricula">Matrícula:</label>
+                        <input
+                            type="text"
+                            id="matricula"
+                            name="matricula"
+                            pattern="[0-9]{8}"
+                            title="Digite exatamente 8 números"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="curso">Curso:</label>
+                        <select id="curso" name="curso" required>
+                            <option value="">Selecione um curso</option>
+                            <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                            <option value="si">Sistemas de Informação</option>
+                            <option value="cc">Ciência da Computação</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="semestre">Semestre:</label>
+                        <input type="number" id="semestre" name="semestre" min="1" max="10">
+                    </p>
+
+                    <p>
+                        <label for="documento">Documento:</label>
+                        <input type="file" id="documento" name="documento">
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Aceito os termos da matrícula</label>
+                    </p>
+
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Enviar matrícula">
+                    <input type="reset" value="Limpar">
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Atividade de HTML</p>
+    </footer>
+
+</body>
+
+</html>
